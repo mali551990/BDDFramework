@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: Runner.executeRunner
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 17.272 sec <<< FAILURE! - in Runner.executeRunner
+And user is able to add the product to Cart(Scenario: Verify that user is able to add product to Cart)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at StepDefinition.TC_AddProduct.user_is_able_to_add_the_product_to_Cart(TC_AddProduct.java:40)
+	at ?.And user is able to add the product to Cart(addProductFeature.feature:7)
+
+Scenario: Verify that user is able to add product to Cart  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at StepDefinition.TC_AddProduct.user_is_able_to_add_the_product_to_Cart(TC_AddProduct.java:40)
+	at ?.And user is able to add the product to Cart(addProductFeature.feature:7)
+
