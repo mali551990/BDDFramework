@@ -1,22 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: Runner.executeRunner
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 17.272 sec <<< FAILURE! - in Runner.executeRunner
-And user is able to add the product to Cart(Scenario: Verify that user is able to add product to Cart)  Time elapsed: 0.004 sec  <<< FAILURE!
-java.lang.AssertionError: null
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertFalse(Assert.java:64)
-	at org.junit.Assert.assertFalse(Assert.java:74)
-	at StepDefinition.TC_AddProduct.user_is_able_to_add_the_product_to_Cart(TC_AddProduct.java:40)
-	at ?.And user is able to add the product to Cart(addProductFeature.feature:7)
+Tests run: 17, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.218 sec <<< FAILURE! - in Runner.executeRunner
+Then I validate the status code is equals 200(Scenario: Delete existing record and verify the status code)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<404>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at StepDefinition.TC_API_deleteRequest.i_validate_the_status_code_is_equals(TC_API_deleteRequest.java:34)
+	at ?.Then I validate the status code is equals 200(deleteRequest.feature:9)
 
-Scenario: Verify that user is able to add product to Cart  Time elapsed: 0.004 sec  <<< FAILURE!
-java.lang.AssertionError: null
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertFalse(Assert.java:64)
-	at org.junit.Assert.assertFalse(Assert.java:74)
-	at StepDefinition.TC_AddProduct.user_is_able_to_add_the_product_to_Cart(TC_AddProduct.java:40)
-	at ?.And user is able to add the product to Cart(addProductFeature.feature:7)
+Scenario: Delete existing record and verify the status code  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<404>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at StepDefinition.TC_API_deleteRequest.i_validate_the_status_code_is_equals(TC_API_deleteRequest.java:34)
+	at ?.Then I validate the status code is equals 200(deleteRequest.feature:9)
 

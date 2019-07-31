@@ -15,18 +15,18 @@ public class Hooks
 	public void beforeScenario()
 	{
 		System.out.println("Before scenario executing");
-		TestBase.launchBrowser();
+		//TestBase.launchBrowser();
 	}
 	
 	@After
 	public void afterScenario(Scenario scenario)
 	{
 		System.out.println("After scenario executing");
-		if(scenario.isFailed())
+		/*if(scenario.isFailed())
 		{
 			final byte [] scrnShot=((TakesScreenshot) TestBase.driver).getScreenshotAs(OutputType.BYTES);
 			scenario.embed(scrnShot, "image/png");
-		}
-		TestBase.closeBrowser();
+		}*/
+		//TestBase.closeBrowser();
 	}
 }

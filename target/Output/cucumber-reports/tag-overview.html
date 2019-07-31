@@ -26,8 +26,8 @@ $(document).ready(function() {
 <script type="text/javascript">
     jQuery(document).ready(function() {
 
-        var chartData = [],
-            chartCategory = [],
+        var chartData = [[12,1,0,0]],
+            chartCategory = ['@APITest'],
             formattedData = [
                 {
                     name: "Passed",
@@ -89,7 +89,7 @@ $(document).ready(function() {
                 }
             },
             xAxis: {
-                categories: []
+                categories: ['@APITest']
             },
             yAxis: {
                 min: 0,
@@ -155,7 +155,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>cucumber-jvm-example</td>
                           <td>42</td>
-                        <td>26 Jul 2019, 15:37</td>
+                        <td>31 Jul 2019, 14:29</td>
           </tr>
         </tbody>
       </table>
@@ -169,7 +169,75 @@ $(document).ready(function() {
   </div>
 
 
-  <div><p>You have no tags in your cucumber features</p></div>
+  <div class="container-fluid" id="charts">
+    <div id="stacked-graph"></div>
+  </div>
+
+  <br>
+  <div class="container-fluid" id="statistics">
+    <table id="tablesorter" class="stats-table">
+      <thead>
+  <tr class="header">
+        <th></th>
+    <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+    <th id="stats-header-steps" colspan="7">Steps</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th id="stats-header-key">Tag</th>
+        <th id="stats-header-scenarios-total">Total</th>
+    <th id="stats-header-scenarios-passed">Passed</th>
+    <th id="stats-header-scenarios-failed">Failed</th>
+    <th id="stats-header-steps-total">Total</th>
+    <th id="stats-header-steps-passed"    class="passed">Passed</th>
+    <th id="stats-header-steps-failed"    class="failed">Failed</th>
+    <th id="stats-header-steps-skipped"   class="skipped">Skipped</th>
+    <th id="stats-header-steps-pending"   class="pending">Pending</th>
+    <th id="stats-header-steps-undefined" class="undefined">Undefined</th>
+    <th id="stats-header-steps-missing"   class="missing">Missing</th>
+    <th id="stats-header-duration">Duration</th>
+    <th id="stats-header-status">Status</th>
+  </tr>
+</thead>
+  
+      <tbody>
+                  <tr>
+            <td class="tagname"><a href="APITest.html">@APITest</a></td>
+            <td>4</td>
+            <td>3</td>
+            <td>1</td>
+            <td>13</td>
+            <td>12</td>
+            <td   class="failed" >1</td>
+            <td >0</td>
+            <td >0</td>
+            <td >0</td>
+            <td >0</td>
+            <td class="duration-format">03s 169ms</td>
+            <td class="failed">Failed</td>
+          </tr>
+              </tbody>
+  
+      <tfoot>
+        <tr>
+          <td>1</td>
+          <td>4</td>
+          <td>3</td>
+          <td>1</td>
+          <td>13</td>
+          <td>12</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td class="duration-format">03s 169ms</td>
+          <td>Totals</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
 
 
 <nav class="navbar navbar-default" id="footer">
