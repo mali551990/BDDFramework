@@ -2,16 +2,17 @@
 Cucumber BDD Framework using API calls
 
 Steps to install Json Server
-https://nodejs.org/en/download/ --> Download node js and install 
-open cmd prompt and enter npm install -g json-server
+1. https://nodejs.org/en/download/ --> Download node js and install 
 
-you may get response something like this
- json-server@0.15.0
-added 237 packages from 128 contributors in 26.9s
+2. open cmd prompt and enter npm install -g json-server
 
-enter the cmd  json-server --watch db.json
+3. you may get response something like this
+  json-server@0.15.0
+ added 237 packages from 128 contributors in 26.9s
 
-again you will recieve response from npm
+4. enter the cmd  json-server --watch db.json
+
+5. again you will recieve response from npm
 
 
   \{^_^}/ hi!
