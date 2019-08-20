@@ -1,0 +1,5 @@
+Incedo Journey:	0
+BAU Journey:	1
+Holdout Journey : 0
+Control Journey:	0
+Total Traffic:	1

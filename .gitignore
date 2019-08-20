@@ -1,0 +1,6 @@
+test-output/
+target/
+OutputArchive/
+Output/
+log/
+src/main/java/ExternalDataProvider/MockTraffic.csv

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="experiment" value="exp1" />
+	<parameter name="environment" value="QA8" />
+
+	<test name="Test_1">
+		<classes>
+			<class
+				name="testCase.mobile.TC004_Exp1_Mobile_LateLogin_Upgrade" />
+		</classes>
+	</test> 
+	</suite> <!-- Suite -->

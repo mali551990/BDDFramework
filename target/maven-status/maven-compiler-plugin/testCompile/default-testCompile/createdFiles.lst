@@ -1,8 +1,0 @@
-StepDefinition\TC_API_deleteRequest.class
-StepDefinition\TC_API_postRequest.class
-StepDefinition\Hooks.class
-StepDefinition\TC_SearchGoogle.class
-Runner\executeRunner.class
-StepDefinition\TC_AddProduct.class
-StepDefinition\TC_API_putRequest.class
-StepDefinition\TC_API_getRequest.class
